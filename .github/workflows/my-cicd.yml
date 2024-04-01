@@ -30,8 +30,7 @@ jobs:
               run: npm ci
             - name: Build code
               run: npm run build
-            - name: Deploy to GH Pages 🚀
-              run: | 
-                git config --global user.email "subhanhafiz12@gmail.com"
-                git config --global user.name "Subhan"
-                npm run deploy
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                folder: build
