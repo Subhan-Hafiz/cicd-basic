@@ -9,7 +9,7 @@
     "lint": "eslint --ext .jsx --fix src",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test": "vitest run"
   },
